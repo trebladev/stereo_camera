@@ -1,0 +1,7 @@
+<launch>
+	<node pkg="camera_split" type="camera_split_node" name="camera_split_node" output="screen" >
+	<param name="left_cam_file" value="file:///tmp/left.yaml" />
+	<param name="right_cam_file" value="file:///tmp/right.yaml" />
+</node>
+</launch>
+
