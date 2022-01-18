@@ -68,3 +68,12 @@
 /home/xuan/stereo_camera/build/camera_split/CMakeFiles/edit_cache.dir
 /home/xuan/stereo_camera/build/camera_split/CMakeFiles/roscpp_generate_messages_eus.dir
 /home/xuan/stereo_camera/build/camera_split/CMakeFiles/rebuild_cache.dir
+/home/xuan/stereo_camera/build/ydlidar/CMakeFiles/install/strip.dir
+/home/xuan/stereo_camera/build/ydlidar/CMakeFiles/install/local.dir
+/home/xuan/stereo_camera/build/ydlidar/CMakeFiles/install.dir
+/home/xuan/stereo_camera/build/ydlidar/CMakeFiles/list_install_components.dir
+/home/xuan/stereo_camera/build/ydlidar/CMakeFiles/rebuild_cache.dir
+/home/xuan/stereo_camera/build/ydlidar/CMakeFiles/edit_cache.dir
+/home/xuan/stereo_camera/build/ydlidar/CMakeFiles/test.dir
+/home/xuan/stereo_camera/build/ydlidar/CMakeFiles/ydlidar_client.dir
+/home/xuan/stereo_camera/build/ydlidar/CMakeFiles/ydlidar_node.dir

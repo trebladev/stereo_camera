@@ -132,6 +132,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/xuan/stereo_camera/build/gtest/cmake_install.cmake")
   include("/home/xuan/stereo_camera/build/camera_split/cmake_install.cmake")
+  include("/home/xuan/stereo_camera/build/ydlidar/cmake_install.cmake")
 
 endif()
 

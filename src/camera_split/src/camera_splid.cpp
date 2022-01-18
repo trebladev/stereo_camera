@@ -64,8 +64,8 @@ public:
 		namespace enc= sensor_msgs::image_encodings;
 		cv_ptr= cv_bridge::toCvShare(msg, enc::BGR8);
 		//截取ROI(Region Of Interest)，即左右图像，会将原图像数据拷贝出来。
-		leftImgROI_=cv_ptr->image(cv::Rect(0,0,cv_ptr->image.cols/2, cv_ptr->image.rows));
-		rightImgROI_=cv_ptr->image(cv::Rect(cv_ptr->image.cols/2,0, cv_ptr->image.cols/2, cv_ptr->image.rows ));
+		rightImgROI_=cv_ptr->image(cv::Rect(0,0,cv_ptr->image.cols/2, cv_ptr->image.rows));
+		leftImgROI_=cv_ptr->image(cv::Rect(cv_ptr->image.cols/2,0, cv_ptr->image.cols/2, cv_ptr->image.rows ));
 		//创建两个CvImage, 用于存放原始图像的左右部分。CvImage创建时是对Mat进行引用的,不会进行数据拷贝
 		leftImgPtr_=cv_bridge::CvImagePtr(new cv_bridge::CvImage(cv_ptr->header, cv_ptr->encoding,leftImgROI_) );
 		rightImgPtr_=cv_bridge::CvImagePtr(new cv_bridge::CvImage(cv_ptr->header, cv_ptr->encoding,rightImgROI_) );
@@ -74,7 +74,7 @@ public:
 		ci_left_->header = cv_ptr->header; 	//很重要，不然会提示不同步导致无法去畸变
 		ci_right_->header = cv_ptr->header;
 		sensor_msgs::ImagePtr leftPtr =leftImgPtr_->toImageMsg();
-		sensor_msgs::ImagePtr rightPtr =leftImgPtr_->toImageMsg();
+		sensor_msgs::ImagePtr rightPtr =rightImgPtr_->toImageMsg();
 		leftPtr->header=msg->header; 		//很重要，不然输出的图象没有时间戳
 		rightPtr->header=msg->header;
 		image_pub_left_.publish(leftPtr,ci_left_);

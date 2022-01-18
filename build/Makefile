@@ -622,6 +622,32 @@ roscpp_generate_messages_eus/fast:
 	$(MAKE) -f camera_split/CMakeFiles/roscpp_generate_messages_eus.dir/build.make camera_split/CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
 
+#=============================================================================
+# Target rules for targets named ydlidar_client
+
+# Build rule for target.
+ydlidar_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ydlidar_client
+.PHONY : ydlidar_client
+
+# fast build rule for target.
+ydlidar_client/fast:
+	$(MAKE) -f ydlidar/CMakeFiles/ydlidar_client.dir/build.make ydlidar/CMakeFiles/ydlidar_client.dir/build
+.PHONY : ydlidar_client/fast
+
+#=============================================================================
+# Target rules for targets named ydlidar_node
+
+# Build rule for target.
+ydlidar_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ydlidar_node
+.PHONY : ydlidar_node
+
+# fast build rule for target.
+ydlidar_node/fast:
+	$(MAKE) -f ydlidar/CMakeFiles/ydlidar_node.dir/build.make ydlidar/CMakeFiles/ydlidar_node.dir/build
+.PHONY : ydlidar_node/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -670,6 +696,8 @@ help:
 	@echo "... camera_split_node"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_eus"
+	@echo "... ydlidar_client"
+	@echo "... ydlidar_node"
 .PHONY : help
 
 

@@ -15,9 +15,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "catkin/catkin_generated/version/package.cmake"
   "catkin_generated/installspace/_setup_util.py"
   "catkin_generated/order_packages.cmake"
+  "ydlidar/catkin_generated/ordered_paths.cmake"
+  "ydlidar/catkin_generated/package.cmake"
   "/home/xuan/stereo_camera/src/CMakeLists.txt"
   "/home/xuan/stereo_camera/src/camera_split/CMakeLists.txt"
   "/home/xuan/stereo_camera/src/camera_split/package.xml"
+  "/home/xuan/stereo_camera/src/ydlidar/CMakeLists.txt"
+  "/home/xuan/stereo_camera/src/ydlidar/package.xml"
   "/opt/ros/noetic/share/camera_calibration_parsers/cmake/camera_calibration_parsersConfig-version.cmake"
   "/opt/ros/noetic/share/camera_calibration_parsers/cmake/camera_calibration_parsersConfig.cmake"
   "/opt/ros/noetic/share/camera_info_manager/cmake/camera_info_managerConfig-version.cmake"
@@ -205,6 +209,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "gtest/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
   "gtest/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "camera_split/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "ydlidar/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -244,4 +249,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "camera_split/CMakeFiles/camera_split_node.dir/DependInfo.cmake"
   "camera_split/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/DependInfo.cmake"
   "camera_split/CMakeFiles/roscpp_generate_messages_eus.dir/DependInfo.cmake"
+  "ydlidar/CMakeFiles/ydlidar_client.dir/DependInfo.cmake"
+  "ydlidar/CMakeFiles/ydlidar_node.dir/DependInfo.cmake"
   )

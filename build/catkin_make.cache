@@ -1,2 +1,2 @@
-camera_split
+camera_split:ydlidar
 -DCATKIN_DEVEL_PREFIX=/home/xuan/stereo_camera/devel -DCMAKE_INSTALL_PREFIX=/home/xuan/stereo_camera/install -G Unix Makefiles
